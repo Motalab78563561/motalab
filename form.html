@@ -1,0 +1,118 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+<style>
+body{  background-image:url("light_bulb_by_vvolny_d1s0ob2-pre.jpg");
+       background-repeat: no-repeat;
+      background-size: 100%;
+      }
+input[type=text]{
+                  width:50%;
+                  padding-top:10px;
+                  padding-bottom:10px;
+                  margin:8px;
+                  box-sizing: border-box;
+                  background-color: inherit;
+                  border: none;
+                  border-bottom: 4px solid blue;
+
+}
+label{font-size: 125%;}
+h1{font-size: 300%;}
+select{
+        width: 22%;
+        padding-top: 10px;
+        padding-bottom:10px;
+        background-color:   #b3ffec;}
+        .cont {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        .cont input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          background-color: #eee;
+          border-radius: 50%;
+        }
+        .cont:hover input ~ .checkmark {
+          background-color: #ccc;
+        }
+        .cont input:checked ~ .checkmark {
+          background-color: #2196F3;
+        }
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+        .cont input:checked ~ .checkmark:after {
+          display: block;
+        }
+        .cont.checkmark:after {
+         	top: 9px;
+        	left: 9px;
+        	width: 8px;
+        	height: 8px;
+        	border-radius: 50%;
+        	background: white;
+        }
+    .radio-btn{
+     float: left;
+     margin-left: 280px;
+    }
+
+  </style>
+
+  </head>
+<body>
+<div class="input-form" align="center"
+<form>
+<h1> Sing Up</h1>
+<label for="fname">Frist name</label>
+<input type="text" id="fname" name="fname"><br><br>
+<label for="lname">last name</label>
+<input type="text" id="lname" name="lname"><br><br>
+<label for="con">cauntry</label>
+<select id="con">
+     <option> Bangladesh</option>
+     <option>India</option>
+     <option>Pakistan</option>
+</select>
+<label for="gen">gander</label>
+<select id="gen">
+     <option>Male</option>
+     <option>Female</option>
+      <option>other</option>
+     </select>
+     <div class="radio-btn">
+       <label class="cont">citizen
+         <input type="radio" checked="checked" name="radio">
+         <span class="checkmark"></span>
+       </label>
+       <label class="cont">non-citizen
+         <input type="radio" name="radio">
+         <span class="checkmark"></span>
+       </label>
+
+
+     </div>
+</form>
+</div>
+  </body>
+
+</html>
